@@ -1,7 +1,28 @@
+body {
+    background-color: #f7fee7;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 36px;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 4fr 1.5fr 5fr 2fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#title {
+    font-family: 'Bungee', cursive;
+    font-size: 80px;
+    color: purple;
+}
+
 #game-board {
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -12,4 +33,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#square-1 {
+    border-top-left-radius: 8px;
+}
+
+#square-3 {
+    border-top-right-radius: 8px;
+}
+
+#square-7 {
+    border-bottom-left-radius: 8px;
+}
+
+#square-9 {
+    border-bottom-right-radius: 8px;
+}
+
+#reset-button {
+    background-color: purple;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 24px;
+    color: #ecfccb;
 }
